@@ -11,13 +11,21 @@ import UIKit
 class MainTabBarController: UITabBarController {
     
     let homeVc = HomeViewController()
-    let discoverVc = DiscoverViewController()
+    let searchVc = SearchViewController()
+    let addVc = AddViewController()
+    let followVc = FollowViewController()
+//    let discoverVc = DiscoverViewController()
     let profileVc = ProfileViewController()
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        // 1. 添加所有自控制器
         addAllChildControoler()
+        // 2. 设置tabbar
+        let customTabBar = MainTabBar()
+        customTabBar.customDelegate = self as? MainTabBarDelegate
+        self.setValue(customTabBar, forKey: "tabBar")
     }
 
     override func didReceiveMemoryWarning() {
@@ -25,7 +33,7 @@ class MainTabBarController: UITabBarController {
         
     }
     
-    //  添加所有主navigation controller
+    /** 添加所有自控制器 */
     private func addAllChildControoler() {
         // home
         let home = HomeViewController()
@@ -39,13 +47,28 @@ class MainTabBarController: UITabBarController {
         let profile = ProfileViewController()
         profile.view.backgroundColor = UIColor.yellow
         addAloneChildController(controller: home, name: "首页")
-        addAloneChildController(controller: discover, name: "发现")
+//        addAloneChildController(controller: discover, name: "发现")
+        addAloneChildController(controller: searchVc, name: "搜索")
+//        addAloneChildController(controller: addVc, name: "添加")
+        addAloneChildController(controller: followVc, name: "关注")
         addAloneChildController(controller: profile, name: "个人")
     }
     private func addAloneChildController(controller: UIViewController,name: String?) {
         
-        let vc = UINavigationController(rootViewController: controller)
-        vc.title = name
-        addChildViewController(vc)
+        let naVc = UINavigationController(rootViewController: controller)
+        naVc.title = name
+        controller.title = name
+        addChildViewController(naVc)
     }
 }
+
+// MARK: - lazy load
+// MARK: - life cycle
+// MARK: - delegate
+extension MainTabBarController: MainTabBarDelegate {
+    func callBack(string: String) {
+        print("bar call back")
+    }
+}
+// MARK: - event response
+// MARK: - private methods
