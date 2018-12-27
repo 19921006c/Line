@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		7CEE8EB3816A822D696895CC /* Pods_Line.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4EF908ED97E88BEA3081FD01 /* Pods_Line.framework */; };
-		BB16989821CE35D7009408B8 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB16989621CE35D7009408B8 /* ProfileViewController.swift */; };
 		BB3D6294214E8273005493D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D628D214E8273005493D5 /* AppDelegate.swift */; };
-		BB3D6295214E8273005493D5 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB3D628E214E8273005493D5 /* Info.plist */; };
 		BB3D6296214E8273005493D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D628F214E8273005493D5 /* ViewController.swift */; };
 		BB3D6299214E82FA005493D5 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D6298214E82FA005493D5 /* MainTabBarController.swift */; };
 		BB3D629B214E8345005493D5 /* MainNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D629A214E8345005493D5 /* MainNavigationController.swift */; };
 		BB3D629D214E858E005493D5 /* DiscoverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D629C214E858E005493D5 /* DiscoverViewController.swift */; };
 		BB3D629F214E859F005493D5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB3D629E214E859F005493D5 /* HomeViewController.swift */; };
+		BB4DF0DF21D54D4900420FE7 /* FriendModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DF0DE21D54D4900420FE7 /* FriendModel.swift */; };
+		BB4DF0E121D55FE600420FE7 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB4DF0E021D55FE600420FE7 /* ResultViewController.swift */; };
 		BB82791F21D4EC8A0008ACEB /* MessageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82791E21D4EC8A0008ACEB /* MessageViewController.swift */; };
 		BB82792121D4ECF70008ACEB /* DynamicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82792021D4ECF70008ACEB /* DynamicViewController.swift */; };
 		BB82792321D4ED340008ACEB /* FriendsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82792221D4ED340008ACEB /* FriendsViewController.swift */; };
@@ -78,7 +78,6 @@
 /* Begin PBXFileReference section */
 		4EF908ED97E88BEA3081FD01 /* Pods_Line.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Line.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		995C2DBD0A02FFC7C56797EF /* Pods-Line.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Line.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Line/Pods-Line.debug.xcconfig"; sourceTree = "<group>"; };
-		BB16989621CE35D7009408B8 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		BB3D628D214E8273005493D5 /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BB3D628E214E8273005493D5 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		BB3D628F214E8273005493D5 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +85,8 @@
 		BB3D629A214E8345005493D5 /* MainNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainNavigationController.swift; sourceTree = "<group>"; };
 		BB3D629C214E858E005493D5 /* DiscoverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiscoverViewController.swift; sourceTree = "<group>"; };
 		BB3D629E214E859F005493D5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BB4DF0DE21D54D4900420FE7 /* FriendModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendModel.swift; sourceTree = "<group>"; };
+		BB4DF0E021D55FE600420FE7 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		BB82791E21D4EC8A0008ACEB /* MessageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageViewController.swift; sourceTree = "<group>"; };
 		BB82792021D4ECF70008ACEB /* DynamicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicViewController.swift; sourceTree = "<group>"; };
 		BB82792221D4ED340008ACEB /* FriendsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewController.swift; sourceTree = "<group>"; };
@@ -292,7 +293,8 @@
 		BB3D6291214E8273005493D5 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				BB16989621CE35D7009408B8 /* ProfileViewController.swift */,
+				BB82792221D4ED340008ACEB /* FriendsViewController.swift */,
+				BB4DF0E021D55FE600420FE7 /* ResultViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -300,6 +302,7 @@
 		BB3D6292214E8273005493D5 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB4DF0DE21D54D4900420FE7 /* FriendModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -406,7 +409,6 @@
 			children = (
 				BBD719B321BD83F2002F02EF /* FollowViewController.swift */,
 				BBAB039521CE3B8900DC04EA /* FollowViewController.xib */,
-				BB82792221D4ED340008ACEB /* FriendsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -652,7 +654,6 @@
 				BBAB03A821CE54CB00DC04EA /* FollowTableViewNoteCell.xib in Resources */,
 				BBAB03AC21CE56A000DC04EA /* FollwTableViewFollwCell.xib in Resources */,
 				BB82792F21D4FB690008ACEB /* ActivityTableViewCell.xib in Resources */,
-				BB3D6295214E8273005493D5 /* Info.plist in Resources */,
 				BBAB039C21CE3F4900DC04EA /* FollowTableViewADCell.xib in Resources */,
 				BB82793121D501C00008ACEB /* ActivityData.plist in Resources */,
 			);
@@ -740,12 +741,13 @@
 				BB82792E21D4FB690008ACEB /* ActivityTableViewCell.swift in Sources */,
 				BB82792721D4F3860008ACEB /* Define.swift in Sources */,
 				BB82792B21D4FA730008ACEB /* ActivityTableView.swift in Sources */,
-				BB16989821CE35D7009408B8 /* ProfileViewController.swift in Sources */,
 				BB82792321D4ED340008ACEB /* FriendsViewController.swift in Sources */,
 				BBAB039F21CE4E5500DC04EA /* FollowTableViewPhotoCell.swift in Sources */,
 				BB82793D21D527A30008ACEB /* MessageModel.swift in Sources */,
+				BB4DF0DF21D54D4900420FE7 /* FriendModel.swift in Sources */,
 				BB3D629D214E858E005493D5 /* DiscoverViewController.swift in Sources */,
 				BBAB03AB21CE56A000DC04EA /* FollwTableViewFollwCell.swift in Sources */,
+				BB4DF0E121D55FE600420FE7 /* ResultViewController.swift in Sources */,
 				BB3D629F214E859F005493D5 /* HomeViewController.swift in Sources */,
 				BBAB039B21CE3F4900DC04EA /* FollowTableViewADCell.swift in Sources */,
 			);
@@ -911,6 +913,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RXWNSH56J4;
 				INFOPLIST_FILE = "$(SRCROOT)/Line/Classes/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "developer.ios.zz-gmail.com.Line";
@@ -926,6 +929,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = RXWNSH56J4;
 				INFOPLIST_FILE = "$(SRCROOT)/Line/Classes/Others/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "developer.ios.zz-gmail.com.Line";
