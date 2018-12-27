@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="270" id="KGk-i7-Jjw" customClass="FollowTableViewAreaCell" customModule="Line" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="270"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="269.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="85w-73-Zlm">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="Kv3-Sw-qPM"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木村" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iVY-VK-yOp">
+                        <rect key="frame" x="0.0" y="0.5" width="320" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="BGY-HK-tC5"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="木村の空间" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lMK-VN-n3J">
+                        <rect key="frame" x="0.0" y="45" width="320" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="vDp-bd-UBs"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vyx-9K-BJe">
+                        <rect key="frame" x="0.0" y="44.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="zD9-zY-isx"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="XSb-So-7k2">
+                        <rect key="frame" x="0.0" y="89" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="wAN-Re-wCH"/>
+                        </constraints>
+                    </view>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zzu-6v-409">
+                        <rect key="frame" x="0.0" y="45" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="zzu-6v-409" secondAttribute="height" multiplier="1:1" id="blp-HD-Sni"/>
+                        </constraints>
+                        <state key="normal" title="关注">
+                            <color key="titleColor" red="1" green="0.14913141730000001" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ntv-Cb-XxX">
+                        <rect key="frame" x="0.0" y="89.5" width="320" height="142.5"/>
+                        <string key="text">     浪漫爱情必须存在相互的注视和被注视、欣赏和被欣赏、了解和被了解、考察和被考察、内心的袒露和接受它的愿望。这是爱情的核心、爱情的实质。
+眼睛对于爱的萌芽起着极其重要的心理作用。真正的爱是在双方审美观和道德观逐渐统一的过程中发展起来的。</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="52O-am-Zcn">
+                        <rect key="frame" x="276" y="225.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="bJR-7f-OKM"/>
+                            <constraint firstAttribute="width" constant="44" id="kvW-aR-pRM"/>
+                        </constraints>
+                        <state key="normal" title="回复"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhf-h7-NNy">
+                        <rect key="frame" x="232" y="225.5" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="1dH-L4-Zhd"/>
+                            <constraint firstAttribute="width" constant="44" id="T1W-uT-aJ4"/>
+                        </constraints>
+                        <state key="normal" title="点赞"/>
+                    </button>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="XSb-So-7k2" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="1vp-VK-P32"/>
+                    <constraint firstItem="52O-am-Zcn" firstAttribute="leading" secondItem="jhf-h7-NNy" secondAttribute="trailing" id="4Gy-iq-KVy"/>
+                    <constraint firstAttribute="bottom" secondItem="jhf-h7-NNy" secondAttribute="bottom" id="4wR-WR-bYS"/>
+                    <constraint firstAttribute="bottom" secondItem="52O-am-Zcn" secondAttribute="bottom" id="5O5-Ik-RMv"/>
+                    <constraint firstItem="zzu-6v-409" firstAttribute="top" secondItem="Vyx-9K-BJe" secondAttribute="bottom" id="6Ze-Gk-NbY"/>
+                    <constraint firstAttribute="trailing" secondItem="Vyx-9K-BJe" secondAttribute="trailing" id="8E1-Dx-Nr4"/>
+                    <constraint firstItem="85w-73-Zlm" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="8ll-7b-4iC"/>
+                    <constraint firstItem="iVY-VK-yOp" firstAttribute="top" secondItem="85w-73-Zlm" secondAttribute="bottom" id="AfT-ox-6Ys"/>
+                    <constraint firstItem="lMK-VN-n3J" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="D9P-os-Q2u"/>
+                    <constraint firstItem="Ntv-Cb-XxX" firstAttribute="top" secondItem="XSb-So-7k2" secondAttribute="bottom" id="DfU-YT-yTE"/>
+                    <constraint firstItem="Vyx-9K-BJe" firstAttribute="top" secondItem="iVY-VK-yOp" secondAttribute="bottom" id="FMr-BM-9Yn"/>
+                    <constraint firstAttribute="trailing" secondItem="85w-73-Zlm" secondAttribute="trailing" id="Grf-W3-26t"/>
+                    <constraint firstItem="lMK-VN-n3J" firstAttribute="top" secondItem="Vyx-9K-BJe" secondAttribute="bottom" id="IFI-9t-tEh"/>
+                    <constraint firstItem="85w-73-Zlm" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="IiF-jQ-NE4"/>
+                    <constraint firstItem="XSb-So-7k2" firstAttribute="top" secondItem="lMK-VN-n3J" secondAttribute="bottom" id="T0I-GP-Psu"/>
+                    <constraint firstAttribute="trailing" secondItem="52O-am-Zcn" secondAttribute="trailing" id="VVb-LC-2XX"/>
+                    <constraint firstAttribute="trailing" secondItem="Ntv-Cb-XxX" secondAttribute="trailing" id="ZJk-eR-z8R"/>
+                    <constraint firstItem="XSb-So-7k2" firstAttribute="top" secondItem="zzu-6v-409" secondAttribute="bottom" id="clv-T9-0JA"/>
+                    <constraint firstAttribute="trailing" secondItem="iVY-VK-yOp" secondAttribute="trailing" id="hJj-4i-ci0"/>
+                    <constraint firstAttribute="trailing" secondItem="lMK-VN-n3J" secondAttribute="trailing" id="hg3-Z9-qRw"/>
+                    <constraint firstAttribute="trailing" secondItem="XSb-So-7k2" secondAttribute="trailing" id="qIo-os-XUi"/>
+                    <constraint firstItem="Ntv-Cb-XxX" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rUI-ls-pGG"/>
+                    <constraint firstItem="zzu-6v-409" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="rX9-il-ssF"/>
+                    <constraint firstItem="iVY-VK-yOp" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="uFR-x7-ZIA"/>
+                    <constraint firstItem="Vyx-9K-BJe" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="z6v-VQ-oFI"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="39" y="205"/>
+        </tableViewCell>
+    </objects>
+</document>

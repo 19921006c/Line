@@ -8,67 +8,92 @@
 
 import UIKit
 
-class MainTabBarController: UITabBarController {
-    
-    let homeVc = HomeViewController()
-    let searchVc = SearchViewController()
-    let addVc = AddViewController()
-    let followVc = FollowViewController()
-//    let discoverVc = DiscoverViewController()
-    let profileVc = ProfileViewController()
 
+// MARK: - lazy load
+class MainTabBarController: UITabBarController {
+    /**
+     *  activiry view controler
+     */
+    lazy var actVc: ActivityViewController = {
+        let vc = ActivityViewController()
+        return vc
+    }()
+    /**
+     *  message view controller
+     */
+    lazy var msgVc: MessageViewController = {
+        let vc = MessageViewController()
+        return vc
+    }()
+    /**
+     *  dynamic view controller
+     */
+    lazy var dynamicVc: DynamicViewController = {
+        let vc = DynamicViewController()
+        return vc
+    }()
+    /**
+     *  friends view controler
+     */
+    lazy var friendsVc: FriendsViewController = {
+        let vc = FriendsViewController()
+        return vc
+    }()
+    /**
+     *  profile view controller
+     */
+    lazy var profileVc: ProfileViewController = {
+        let vc = ProfileViewController()
+        return vc
+    }()
+}
+// MARK: - life cycle
+extension MainTabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         // 1. 添加所有自控制器
         addAllChildControoler()
+        
+        
         // 2. 设置tabbar
-        let customTabBar = MainTabBar()
-        customTabBar.customDelegate = self as? MainTabBarDelegate
-        self.setValue(customTabBar, forKey: "tabBar")
+        //        let customTabBar = MainTabBar()
+        //        customTabBar.customDelegate = self as? MainTabBarDelegate
+        //        self.setValue(customTabBar, forKey: "tabBar")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         
     }
-    
-    /** 添加所有自控制器 */
-    private func addAllChildControoler() {
-        // home
-        let home = HomeViewController()
-        home.view.backgroundColor = UIColor.red
         
-        // discover
-        let discover = DiscoverViewController()
-        discover.view.backgroundColor = UIColor.blue
-        
-        // profile
-        let profile = ProfileViewController()
-        profile.view.backgroundColor = UIColor.yellow
-        addAloneChildController(controller: home, name: "首页")
-//        addAloneChildController(controller: discover, name: "发现")
-        addAloneChildController(controller: searchVc, name: "搜索")
-//        addAloneChildController(controller: addVc, name: "添加")
-        addAloneChildController(controller: followVc, name: "关注")
-        addAloneChildController(controller: profile, name: "个人")
-    }
-    private func addAloneChildController(controller: UIViewController,name: String?) {
-        
-        let naVc = UINavigationController(rootViewController: controller)
-        naVc.title = name
-        controller.title = name
-        addChildViewController(naVc)
-    }
 }
 
-// MARK: - lazy load
-// MARK: - life cycle
+
 // MARK: - delegate
 extension MainTabBarController: MainTabBarDelegate {
     func callBack(string: String) {
-        print("bar call back")
+//        let vc = AddViewController()
+//        vc.view.backgroundColor = UIColor.blue
+//        present(vc, animated: true, completion: nil)
     }
 }
 // MARK: - event response
 // MARK: - private methods
+    extension MainTabBarController {
+        /** 添加所有自控制器 */
+        private func addAllChildControoler() {
+            addAloneChildController(controller: actVc, name: "活动")
+            addAloneChildController(controller: msgVc, name: "消息")
+            addAloneChildController(controller: friendsVc, name: "好友")
+            addAloneChildController(controller: dynamicVc, name: "动态")
+            addAloneChildController(controller: profileVc, name: "我的")
+        }
+        /** 单独添加控制器 */
+        private func addAloneChildController(controller: UIViewController,name: String?) {
+            let naVc = UINavigationController(rootViewController: controller)
+            naVc.title = name
+            controller.title = name
+            addChildViewController(naVc)
+        }
+}

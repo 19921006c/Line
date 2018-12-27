@@ -1,14 +1,14 @@
 //
-//  ProfileViewController.swift
+//  FriendsViewController.swift
 //  Line
 //
-//  Created by developer ios on 2018/12/22.
-//  Copyright © 2018 developer.ios.zz@gmail.com. All rights reserved.
+//  Created by developer ios on 2018/12/27.
+//  Copyright © 2018年 developer.ios.zz@gmail.com. All rights reserved.
 //
 
 import UIKit
 
-class ProfileViewController: UIViewController {
+class FriendsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

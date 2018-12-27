@@ -1,18 +1,19 @@
 //
-//  AddViewController.swift
+//  AddActivityViewController.swift
 //  Line
 //
-//  Created by developer ios on 2018/12/10.
-//  Copyright © 2018 developer.ios.zz@gmail.com. All rights reserved.
+//  Created by developer ios on 2018/12/27.
+//  Copyright © 2018年 developer.ios.zz@gmail.com. All rights reserved.
 //
 
 import UIKit
 
-class AddViewController: UIViewController {
+class AddActivityViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "添加活动"
         // Do any additional setup after loading the view.
     }
 

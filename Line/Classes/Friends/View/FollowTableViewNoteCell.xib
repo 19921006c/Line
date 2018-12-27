@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="200" id="KGk-i7-Jjw" customClass="FollowTableViewNoteCell" customModule="Line" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="196"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="195.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="恋爱笔记" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k18-Tj-Vhc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="0aS-Dc-hYv"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMS-il-8gF">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="GQZ-nl-3o1"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jnA-6N-0zd">
+                        <rect key="frame" x="0.0" y="44" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="3fV-Nv-Jtw"/>
+                        </constraints>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCt-Bg-cIu">
+                        <rect key="frame" x="10" y="54.5" width="300" height="131"/>
+                        <string key="text">    《爱情笔记》是英国作家阿兰·德波顿创作的第一部长篇小说。《爱情笔记》讲述一对青年结识于巴黎至伦敦的客机上，随后便是交往、同居、分手。结构很完整：浪漫邂逅、热度升至顶峰、后犹如花香渐淡开去、熟悉后的倦怠、女友移情别恋、挽回无望、自杀、醒悟，以至一段情完全成为过去</string>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TLh-oX-2ZB">
+                        <rect key="frame" x="0.0" y="195" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="79k-Fd-ZmM"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="k18-Tj-Vhc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0kN-Tm-GUb"/>
+                    <constraint firstItem="jnA-6N-0zd" firstAttribute="top" secondItem="k18-Tj-Vhc" secondAttribute="bottom" id="BFk-Zg-22L"/>
+                    <constraint firstAttribute="bottom" secondItem="TLh-oX-2ZB" secondAttribute="bottom" id="BMZ-dk-epI"/>
+                    <constraint firstItem="TLh-oX-2ZB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="DOY-LM-7kx"/>
+                    <constraint firstAttribute="trailing" secondItem="TLh-oX-2ZB" secondAttribute="trailing" id="IfO-Ho-yaJ"/>
+                    <constraint firstAttribute="trailing" secondItem="k18-Tj-Vhc" secondAttribute="trailing" id="Pqy-YW-NtR"/>
+                    <constraint firstAttribute="trailing" secondItem="SCt-Bg-cIu" secondAttribute="trailing" constant="10" id="a5f-nb-bER"/>
+                    <constraint firstAttribute="trailing" secondItem="BMS-il-8gF" secondAttribute="trailing" id="c9x-82-p4l"/>
+                    <constraint firstAttribute="trailing" secondItem="jnA-6N-0zd" secondAttribute="trailing" id="i4N-M4-W3g"/>
+                    <constraint firstItem="SCt-Bg-cIu" firstAttribute="top" secondItem="jnA-6N-0zd" secondAttribute="bottom" constant="10" id="ieY-zz-Pyc"/>
+                    <constraint firstItem="BMS-il-8gF" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="kfc-vN-XGd"/>
+                    <constraint firstItem="BMS-il-8gF" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="khy-ci-zCl"/>
+                    <constraint firstItem="k18-Tj-Vhc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="psS-PF-REw"/>
+                    <constraint firstAttribute="bottom" secondItem="SCt-Bg-cIu" secondAttribute="bottom" constant="10" id="t2f-Rr-ggD"/>
+                    <constraint firstItem="jnA-6N-0zd" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="v1v-eM-HTJ"/>
+                    <constraint firstItem="SCt-Bg-cIu" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="yoA-gk-ehB"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="43" y="97"/>
+        </tableViewCell>
+    </objects>
+</document>

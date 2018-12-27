@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="FollowTableViewADCell" customModule="Line" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="广告, 通知, 活动" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZmX-aA-wTh">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nrK-Tg-eNn">
+                        <rect key="frame" x="253.5" y="0.0" width="66.5" height="43.5"/>
+                        <color key="backgroundColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="nrK-Tg-eNn" secondAttribute="height" multiplier="23:15" id="CQc-lV-50z"/>
+                        </constraints>
+                        <state key="normal" title="铃铛">
+                            <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                        </state>
+                    </button>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4re-qd-B2Q">
+                        <rect key="frame" x="0.0" y="43" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490196079" green="0.84313725490196079" blue="0.84313725490196079" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="SId-lz-8Kg"/>
+                        </constraints>
+                    </view>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="05f-bY-YND">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="0.5"/>
+                        <color key="backgroundColor" red="0.84313725490000002" green="0.84313725490000002" blue="0.84313725490000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="MF5-3J-AEF"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="05f-bY-YND" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="4AX-HN-HnQ"/>
+                    <constraint firstAttribute="trailing" secondItem="05f-bY-YND" secondAttribute="trailing" id="6NJ-Pq-YTb"/>
+                    <constraint firstItem="nrK-Tg-eNn" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Cuj-lO-RTQ"/>
+                    <constraint firstItem="ZmX-aA-wTh" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Gqh-p2-2He"/>
+                    <constraint firstAttribute="trailing" secondItem="nrK-Tg-eNn" secondAttribute="trailing" id="OsW-E2-6Xb"/>
+                    <constraint firstAttribute="trailing" secondItem="4re-qd-B2Q" secondAttribute="trailing" id="TJo-wO-5LG"/>
+                    <constraint firstAttribute="bottom" secondItem="4re-qd-B2Q" secondAttribute="bottom" id="b01-gm-0q6"/>
+                    <constraint firstItem="ZmX-aA-wTh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="hxZ-87-BPo"/>
+                    <constraint firstAttribute="bottom" secondItem="ZmX-aA-wTh" secondAttribute="bottom" id="jLI-NG-gi5"/>
+                    <constraint firstItem="05f-bY-YND" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="jcd-ZD-MfR"/>
+                    <constraint firstItem="4re-qd-B2Q" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="mE8-im-ou0"/>
+                    <constraint firstAttribute="bottom" secondItem="nrK-Tg-eNn" secondAttribute="bottom" id="mqy-pQ-qjC"/>
+                    <constraint firstAttribute="trailing" secondItem="ZmX-aA-wTh" secondAttribute="trailing" id="zSE-kZ-fgZ"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+        </tableViewCell>
+    </objects>
+</document>
