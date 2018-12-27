@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SettingTableViewCell" customModule="Line" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IiO-sb-9Qq">
+                        <rect key="frame" x="10" y="10" width="23.5" height="23.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="IiO-sb-9Qq" secondAttribute="height" multiplier="1:1" id="MAI-3l-7LE"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dCZ-En-IS5">
+                        <rect key="frame" x="43.5" y="0.0" width="266.5" height="43.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="dCZ-En-IS5" firstAttribute="leading" secondItem="IiO-sb-9Qq" secondAttribute="trailing" constant="10" id="9Ad-1d-QAP"/>
+                    <constraint firstItem="IiO-sb-9Qq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="AFu-ZF-GB8"/>
+                    <constraint firstItem="dCZ-En-IS5" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="III-QC-9kM"/>
+                    <constraint firstItem="IiO-sb-9Qq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="KCi-hJ-Zu2"/>
+                    <constraint firstAttribute="trailing" secondItem="dCZ-En-IS5" secondAttribute="trailing" constant="10" id="Utu-rn-w7o"/>
+                    <constraint firstAttribute="bottom" secondItem="dCZ-En-IS5" secondAttribute="bottom" id="cbH-Kz-L42"/>
+                    <constraint firstAttribute="bottom" secondItem="IiO-sb-9Qq" secondAttribute="bottom" constant="10" id="sYV-MU-Jb2"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="customImageView" destination="IiO-sb-9Qq" id="CdJ-yv-7In"/>
+                <outlet property="label" destination="dCZ-En-IS5" id="y1M-Tr-eXv"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -34,6 +34,9 @@
 		BB82793D21D527A30008ACEB /* MessageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82793C21D527A30008ACEB /* MessageModel.swift */; };
 		BB82794521D52A910008ACEB /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82794421D52A910008ACEB /* SettingViewController.swift */; };
 		BB82794721D52C050008ACEB /* SettingViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB82794621D52C050008ACEB /* SettingViewController.xib */; };
+		BB82794A21D532BD0008ACEB /* SettingTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB82794821D532BD0008ACEB /* SettingTableViewCell.swift */; };
+		BB82794B21D532BD0008ACEB /* SettingTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BB82794921D532BD0008ACEB /* SettingTableViewCell.xib */; };
+		BB82794D21D538C50008ACEB /* SettingData.plist in Resources */ = {isa = PBXBuildFile; fileRef = BB82794C21D538C50008ACEB /* SettingData.plist */; };
 		BBAB039621CE3B8900DC04EA /* FollowViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBAB039521CE3B8900DC04EA /* FollowViewController.xib */; };
 		BBAB039B21CE3F4900DC04EA /* FollowTableViewADCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBAB039921CE3F4900DC04EA /* FollowTableViewADCell.swift */; };
 		BBAB039C21CE3F4900DC04EA /* FollowTableViewADCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BBAB039A21CE3F4900DC04EA /* FollowTableViewADCell.xib */; };
@@ -101,6 +104,9 @@
 		BB82793C21D527A30008ACEB /* MessageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageModel.swift; sourceTree = "<group>"; };
 		BB82794421D52A910008ACEB /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		BB82794621D52C050008ACEB /* SettingViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingViewController.xib; sourceTree = "<group>"; };
+		BB82794821D532BD0008ACEB /* SettingTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewCell.swift; sourceTree = "<group>"; };
+		BB82794921D532BD0008ACEB /* SettingTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SettingTableViewCell.xib; sourceTree = "<group>"; };
+		BB82794C21D538C50008ACEB /* SettingData.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = SettingData.plist; sourceTree = "<group>"; };
 		BBAB039521CE3B8900DC04EA /* FollowViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowViewController.xib; sourceTree = "<group>"; };
 		BBAB039921CE3F4900DC04EA /* FollowTableViewADCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FollowTableViewADCell.swift; sourceTree = "<group>"; };
 		BBAB039A21CE3F4900DC04EA /* FollowTableViewADCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FollowTableViewADCell.xib; sourceTree = "<group>"; };
@@ -338,6 +344,7 @@
 		BB82794221D52A800008ACEB /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				BB82794C21D538C50008ACEB /* SettingData.plist */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -345,6 +352,8 @@
 		BB82794321D52A800008ACEB /* View */ = {
 			isa = PBXGroup;
 			children = (
+				BB82794821D532BD0008ACEB /* SettingTableViewCell.swift */,
+				BB82794921D532BD0008ACEB /* SettingTableViewCell.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -633,11 +642,13 @@
 				BBEC3743214D4B4000B91FE6 /* LaunchScreen.storyboard in Resources */,
 				BBAB039621CE3B8900DC04EA /* FollowViewController.xib in Resources */,
 				BB82793921D521140008ACEB /* MessageData.plist in Resources */,
+				BB82794D21D538C50008ACEB /* SettingData.plist in Resources */,
 				BB82793721D520530008ACEB /* MessageTableViewCell.xib in Resources */,
 				BBEC3740214D4B4000B91FE6 /* Assets.xcassets in Resources */,
 				BBAB03A421CE520100DC04EA /* FollowTableViewAreaCell.xib in Resources */,
 				BBAB03A021CE4E5500DC04EA /* FollowTableViewPhotoCell.xib in Resources */,
 				BB82794721D52C050008ACEB /* SettingViewController.xib in Resources */,
+				BB82794B21D532BD0008ACEB /* SettingTableViewCell.xib in Resources */,
 				BBAB03A821CE54CB00DC04EA /* FollowTableViewNoteCell.xib in Resources */,
 				BBAB03AC21CE56A000DC04EA /* FollwTableViewFollwCell.xib in Resources */,
 				BB82792F21D4FB690008ACEB /* ActivityTableViewCell.xib in Resources */,
@@ -713,6 +724,7 @@
 				BB82793B21D525920008ACEB /* MessageTableView.swift in Sources */,
 				BBD719B621BD870E002F02EF /* MainTabBar.swift in Sources */,
 				BB82792521D4EED90008ACEB /* ActivityViewController.swift in Sources */,
+				BB82794A21D532BD0008ACEB /* SettingTableViewCell.swift in Sources */,
 				BB3D629B214E8345005493D5 /* MainNavigationController.swift in Sources */,
 				BBD719B921BD90C8002F02EF /* UIView+Extensions.swift in Sources */,
 				BBAB03A321CE520100DC04EA /* FollowTableViewAreaCell.swift in Sources */,
