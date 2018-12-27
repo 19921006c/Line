@@ -26,13 +26,6 @@ class MainTabBarController: UITabBarController {
         return vc
     }()
     /**
-     *  dynamic view controller
-     */
-    lazy var dynamicVc: DynamicViewController = {
-        let vc = DynamicViewController()
-        return vc
-    }()
-    /**
      *  friends view controler
      */
     lazy var friendsVc: FriendsViewController = {
@@ -42,8 +35,12 @@ class MainTabBarController: UITabBarController {
     /**
      *  profile view controller
      */
-    lazy var profileVc: ProfileViewController = {
-        let vc = ProfileViewController()
+    lazy var profileVc: FollowViewController = {
+        let vc = FollowViewController()
+        return vc
+    }()
+    lazy var setttingVc: SettingViewController = {
+        let vc = SettingViewController()
         return vc
     }()
 }
@@ -86,8 +83,8 @@ extension MainTabBarController: MainTabBarDelegate {
             addAloneChildController(controller: actVc, name: "活动")
             addAloneChildController(controller: msgVc, name: "消息")
             addAloneChildController(controller: friendsVc, name: "好友")
-            addAloneChildController(controller: dynamicVc, name: "动态")
             addAloneChildController(controller: profileVc, name: "我的")
+            addAloneChildController(controller: setttingVc, name: "设定")
         }
         /** 单独添加控制器 */
         private func addAloneChildController(controller: UIViewController,name: String?) {

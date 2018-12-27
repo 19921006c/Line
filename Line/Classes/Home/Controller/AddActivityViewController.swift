@@ -13,7 +13,7 @@ class AddActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        title = "添加活动"
+        view.backgroundColor = UIColor.white
         // Do any additional setup after loading the view.
     }
 

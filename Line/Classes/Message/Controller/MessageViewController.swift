@@ -7,29 +7,41 @@
 //
 
 import UIKit
+import MJRefresh
+
+
+// MARK: - lazy load
 
 class MessageViewController: UIViewController {
-
+    /** table view */
+    lazy var tableView: MessageTableView = {
+        let view = MessageTableView()
+        return view
+    }()
+}
+// MARK: - life cycle
+extension MessageViewController {
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        
+        // 添加table view
+        view.addSubview(tableView)
+        
+        let array: Array? = MessageModel.getArray()
+            
+        self.tableView.loadArray(array: array)
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        
+        // tableview frame
+        tableView.frame = CGRect(x: 0, y: kNavigationBarHeight, width: kScreenWidth, height: kViewHeight)
     }
-    */
-
+}
+// MARK: - delegate
+// MARK: - event response
+// MARK: - private methods
+extension MessageViewController {
 }

@@ -41,11 +41,9 @@ extension FollowViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: FollowTableViewADCellIdentifier, for: indexPath)
-            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else if indexPath.section == 1 {
             let cell = tableView.dequeueReusableCell(withIdentifier: FollowTableViewPhotoCellIdentifier, for: indexPath)
-            cell.selectionStyle = UITableViewCellSelectionStyle.none
             return cell
         } else if indexPath.section == 2{
             let cell = tableView.dequeueReusableCell(withIdentifier: FollowTableViewAreaCellIdentifier, for: indexPath)
@@ -59,7 +57,7 @@ extension FollowViewController: UITableViewDelegate, UITableViewDataSource {
         return 1
     }
     func numberOfSections(in tableView: UITableView) -> Int {
-        return 10
+        return 4
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         if indexPath.section == 0 {
@@ -75,6 +73,17 @@ extension FollowViewController: UITableViewDelegate, UITableViewDataSource {
             return 200
         }
         return 44
+    }
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let vc = AddActivityViewController()
+        var title: String?
+        let section: Int = indexPath.section
+        if section == 0 { title = "广告" }
+        if section == 1 { title = "照片" }
+        if section == 2 { title = "木村の空间" }
+        if section == 3 {title = "恋爱笔记"}
+        vc.title = title
+        self.navigationController?.pushViewController(vc, animated: true)
     }
 }
 // MARK: - event response

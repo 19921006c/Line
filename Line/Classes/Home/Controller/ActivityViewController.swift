@@ -27,7 +27,11 @@ class ActivityViewController: UIViewController {
         
         // 添加table view
         view.addSubview(tableView)
-        
+        tableView.block = {(title) -> () in
+            let vc = AddActivityViewController()
+            vc.title = title
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
         tableView.mj_header = MJRefreshNormalHeader.init(refreshingBlock: {
             let array: Array? = ActivityModel.getArray()
             
@@ -59,6 +63,7 @@ extension ActivityViewController {
     @objc func rightDown() {
         let vc = AddActivityViewController()
         vc.view.backgroundColor = UIColor.white
+        vc.title = "添加活动"
         navigationController?.pushViewController(vc, animated: true)
     }
 }

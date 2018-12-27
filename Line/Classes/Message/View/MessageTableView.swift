@@ -1,21 +1,18 @@
 //
-//  ActivityTableView.swift
+//  MessageTableView.swift
 //  Line
 //
-//  Created by developer ios on 2018/12/27.
+//  Created by developer ios on 2018/12/28.
 //  Copyright © 2018年 developer.ios.zz@gmail.com. All rights reserved.
 //
 
 import UIKit
 
-typealias funcBlock = (String?) -> ()
-
-private let identifier = "ActivityTableViewCell"
+private let identifier = "MessageTableViewCell"
 // MARK: - lazy load
-class ActivityTableView: UITableView {
+class MessageTableView: UITableView {
     
     var array: [ActivityModel]?
-    var block: funcBlock?
     
     override init(frame: CGRect, style: UITableViewStyle) {
         super.init(frame: frame, style: style)
@@ -32,14 +29,14 @@ class ActivityTableView: UITableView {
     
 }
 // MARK: - life cycle
-extension ActivityTableView {
+extension MessageTableView {
     
 }
 // MARK: - delegate
-extension ActivityTableView: UITableViewDelegate, UITableViewDataSource {
+extension MessageTableView: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        var cell: ActivityTableViewCell?
-        cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? ActivityTableViewCell
+        var cell: MessageTableViewCell?
+        cell = tableView.dequeueReusableCell(withIdentifier: identifier) as? MessageTableViewCell
         let model = self.array![indexPath.section]
         cell?.model = model
         return cell!
@@ -51,18 +48,13 @@ extension ActivityTableView: UITableViewDelegate, UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
         return self.array?.count ?? 0
     }
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let model = self.array![indexPath.section]
-        
-        if block != nil {
-            block!(model.title)
-        }
-        
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 60
     }
 }
 // MARK: - event response
 // MARK: - private methods
-extension ActivityTableView {
+extension MessageTableView {
     func loadArray(array: Array<Any>?) {
         let tmpArray = array as? [ActivityModel]
         self.array = tmpArray
